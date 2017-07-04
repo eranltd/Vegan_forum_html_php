@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Vegan's Place</title>
+
+	<!-- Custom  CSS -->
+  	<link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Start</span> Forum
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li id="registerBtn">
+                        <a class="page-scroll" href="#register">Register</a>
+                    </li>
+                    <li id="loginBtn">
+                         <a class="page-scroll" href="#login_container">Login</a>
+                    </li>
+                    <li id="forumBtn">
+                        <a class="page-scroll" href="#forum">Forum Messeges</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading" id="highlight-head">Vegan's Place</h1>
+                        <p class="intro-text"></p>
+                        <a href="#login_container" class="btn btn-circle page-scroll" id="BtnDirect">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+ <!-- Register Section -->
+    <section id="register" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+  
+<div id="main_container ">
+			<div class="row main pagination-centered center-block">
+			<form class="form" method="get" action="#">
+			<h2>Email :</h2>
+			<input type="text" placeholder="Email Address*"name="demail" id="email_register">
+			<h2>Password :</h2>
+			<input type="password" placeholder="Password*"name="password" id="password_register">
+			<input type="button" class="btn btn-success" name="register" id="register_btn" value="Register">
+
+
+</form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login_container" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div id="main_container ">
+			<div class="row main pagination-centered center-block">
+			<form class="form" method="post" action="#">
+			<h2>Email :</h2>
+			<input type="text" placeholder="Email Address*"name="demail" id="email">
+			<h2>Password :</h2>
+			<input type="password" placeholder="Password*"name="password" id="password">
+			<input type="button" class="btn btn-success" name="login" id="login" value="Login">
+</form>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forum Section -->
+    <section id="forum" class="content-section text-center">
+        <div class="forum-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div style='margin: 100px auto; width: 800px;'>
+            <h1>save a message</h1>
+            <hr />
+            <input id="name_forum" type="text" placeholder="enter a subject*" class="form-control" />
+
+            <input id="message_forum" class="message" type="text" placeholder="enter a message*" class="form-control"/>
+
+            <div class="save_refresh">
+                <button class="btn btn-success" id="save" style="width:100%" id="save">save  <button class="btn btn-success" id="refresh_msg" style="width:100%" id="refresh">Reload Messeges</button></button>
+            </div>
+           
+            <br />
+            <br />
+            <h1 id='msgHeader'>messages</h1>
+            <hr />
+            <ul id="messages" class="list-group intro-text" style='max-height: 300px; overflow:scroll'>
+                
+            </ul>
+        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Forum Admin</h2>
+                <p>Feel free to email us to provide some feedback on our site, give us suggestions for new ideas and designs, or to just say hello!</p>
+                <p><a href="mailto:eranltd@gmail.com">eranltd@gmail.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://www.facebook.com/eranltd" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/eranltd" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/eran-peled-1369565b/" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Eran Peled 2017</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-ww0IhL1ibw6NtxwaivVwb6d203jPvIQ&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+<!-- Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+    <!-- Login JavaScript -->
+    <script src="js/login.js"></script>
+    <!-- Register JavaScript -->
+    <script src="js/register.js"></script>
+    <!-- Forum Javascript -->
+    <script src="js/forum.js"></script>
+</body>
+</html>
